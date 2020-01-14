@@ -37,7 +37,9 @@ print("Distance is: {:.2f}".format(dist(a, b)))
 # YOUR CODE HERE
 
 def print_tuple(t):
-    if len(t) > 1:
+    if type(t) == int:
+        print(t)
+    elif len(t) > 1:
         for i in t: 
              print(i)
     else: 

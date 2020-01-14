@@ -20,3 +20,12 @@ for line in f:
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
+f = open('./src/bar.txt', 'w')
+
+f.write("Hello!!!!")
+f.close()
+
+f = open('./src/bar.txt', 'r')
+
+for line in f: 
+    print(line, end='')
